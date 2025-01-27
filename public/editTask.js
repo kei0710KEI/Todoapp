@@ -6,7 +6,6 @@ const taskCompletedDOM = document.querySelector(".task-edit-completed");
 
 const params = window.location.search;
 const id = new URLSearchParams(params).get("id");
-
 //1つの特定のタスクを取得する
 const showTask = async () => {
     try {
