@@ -2,7 +2,6 @@ const tasksDOM = document.querySelector(".tasks");
 const formDOM = document.querySelector(".task-form");
 const taskInputDOM = document.querySelector(".task-input");
 const formAlertDOM = document.querySelector(".form-alert");
-
 // /api/v1/tasksからタスクを読み込む
 const showTasks = async () => {
     try {
@@ -11,7 +10,7 @@ const showTasks = async () => {
 
         //タスクが1つもないとき
         if (tasks.length < 1) {
-            tasksDOM.innerHTML = `<h5 class="empty-list">タスクがありません<h5>`
+            tasksDOM.innerHTML = `<h5 class="empty-list">タスクがありません<h5>`;
             return;
         }
 
